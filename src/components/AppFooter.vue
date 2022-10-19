@@ -18,6 +18,7 @@ export default{
             return this.$store.state.auth.address;
         },
         getEmail(){
+            console.log(this.$store.state.auth.storeEmail)
             return this.$store.state.auth.storeEmail;
         }
     },

@@ -7,7 +7,7 @@
         <div class="store-details" v-for="(store,index) in stores" :key="index">
           <!--  -->
           <div class="store-img">
-            <img src />
+            <img :src='store.imageUrl' />
           </div>
           <div class="store-information">
             <div class="store-name">
