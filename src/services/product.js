@@ -141,6 +141,7 @@ function createProduct(storeId, form) {
 
 function productImage(storeId, productId, image) {
     let loader = Vue.$loading.show({ loader: 'dots' })
+    console.log("this is a storeid: ",storeId)
     return axios
         .post(
             `/api/v1/stores/${storeId}/products/${productId}/uploadImage/`, image, {

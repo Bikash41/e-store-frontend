@@ -41,6 +41,7 @@ async function getAllOrder(){
 async function getMyOrders(){
     try {
         const orders = await axios.get(`/api/v1/order/showAllMyOrders`);
+        // console.log("my_orders",orders.data)
         return orders.data;
     } catch (error) {
         console.log(error);

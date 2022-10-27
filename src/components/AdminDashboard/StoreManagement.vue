@@ -64,6 +64,7 @@ export default {
   created() {
     store()
       .then(data => {
+        console.log(data.store)
         this.stores = data.store;
         console.log(this.stores);
       })

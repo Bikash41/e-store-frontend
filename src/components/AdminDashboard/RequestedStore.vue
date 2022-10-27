@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     modifyStore(storeId) {
-      console.log(storeId);
+      console.log("storeid",storeId);
       this.update = true;
       this.$store.commit("setStoreId", storeId);
       this.$router.push({
